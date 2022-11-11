@@ -1,14 +1,14 @@
 ﻿Console.WriteLine("Введите дистанцию (больше 10)");
-int distance = Convert.ToInt32(Console.ReadLine());          //Преобразовываем строчный тип в число и записываем в переменную
+double distance = Convert.ToInt32(Console.ReadLine());          //Преобразовываем строчный тип в число и записываем в переменную
 Console.WriteLine("Введите ОТ какого друга побежит собака (1 или 2) ");
 int friend  = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите скорость первого друга");
-int speed1 = Convert.ToInt32(Console.ReadLine());
+double speed1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите скорость второго друга");
-int speed2 = Convert.ToInt32(Console.ReadLine());
+double speed2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите скорость собаки");
-int dogspeed = Convert.ToInt32(Console.ReadLine());
-int time;
+double dogspeed = Convert.ToInt32(Console.ReadLine());
+double time;
 int count = 0;
 
 Console.WriteLine("==Исходные данные==:");
