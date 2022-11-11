@@ -21,16 +21,15 @@ while (distance>10)
     if (friend == 2)
     {
     time = distance/(speed1 + dogspeed);
-    distance = distance - (speed1+speed2) * time; 
     friend = 1;
     }
     else
     {
     time = distance/(speed2 + dogspeed);
-    distance = distance - (speed1+speed2) * time;
     friend = 2;
     }
     count++;
+    distance = distance - (speed1+speed2) * time; 
     
 }
 Console.WriteLine("-----------------------------");
