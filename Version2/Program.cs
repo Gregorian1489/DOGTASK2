@@ -18,18 +18,17 @@ Console.WriteLine($"Скорость собаки = {dogspeed}, пес бежи�
 
 while (distance>10)
 {
-    if (friend == 2)
+    if (friend == 2) // Судя по блок-схеме из лекции, здесь должно быть friend == 1
     {
     time = distance/(speed1 + dogspeed);
-    distance = distance - (speed1+speed2) * time; 
-    friend = 1;
+    friend = 1; // а здесь, соответственно friend = 2;
     }
     else
     {
     time = distance/(speed2 + dogspeed);
-    distance = distance - (speed1+speed2) * time;
-    friend = 2;
+    friend = 2; // здесьполучается friend = 1;
     }
+    distance = distance - (speed1+speed2) * time; // для экономии строк эту формулу можно один раз записать. Надеюсь, я не ошибаюсь))
     count++;
     
 }
